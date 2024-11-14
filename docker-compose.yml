@@ -1,0 +1,12 @@
+name: F5-TTS
+
+services:
+  f5-tts:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: f5-tts
+
+volumes:
+  f5-data:
+    external: true
